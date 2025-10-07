@@ -5,72 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Replicar un wireframe</title>
 
-    <style>
-      header {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: large;
-      }
-
-      nav {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      p {
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 15px 360px;
-      }
-
-
-      
-      button {
-        padding: 15px 35px;
-        border-radius: 5px;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
   <body>
-    <header><strong id="title1">TRADE</strong></header>
-    <table width="100%">
-      <tr>
-        <td align="right">
-          <nav role="navigation" aria-label="Main navigation">
-            <a href="#home">Link 1</a>
-            <a href="#about">Link 2</a>
-            <a href="#services">Link 3</a>
-            <a href="#contact">Link 4</a>
-            <button type="submit" style="background-color: white" aria-label="Sign up button">Sign Up!</button>
-          </nav>
-        </td>
-      </tr>
-    </table>
+    <header>
+      <h3 class="title">TRADE</h3>
+      <table width="100%">
+        <tr>
+          <td align="right">
+            <nav role="navigation" aria-label="Main navigation">
+              <a href="#home">Link 1</a>
+              <a href="#about">Link 2</a>
+              <a href="#services">Link 3</a>
+              <a href="#contact">Link 4</a>
+              <button
+                type="submit"
+                style="background-color: white"
+                aria-label="Sign up button"
+              >
+                Sign Up
+              </button>
+            </nav>
+          </td>
+        </tr>
+      </table>
+    </header>
     <main>
       <article
         style="background-color: #f0f0f0"
         align="center"
         aria-label="Introduction text"
       >
-        <p><b>Ready to get started?</b></p>
+        <p class="article1">
+          <b id="ready">Ready to get started?</b> <br /><br /><br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          placeat, vitae error esse harum voluptate consequuntur. Esse
+          repellendus distinctio nemo vitae sunt?
 
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
-          accusantium sequi ab numquam ad excepturi, doloribus optio officiis
-          aliquid!
-        </p>
-
-        <p>
-          <button
-            type="button"
-            style="background-color: black"
-            aria-label="Sign up button"
-          >
-            <font color="white">Start free trial now!</font>
+          <br /><br /><br />
+          <button id="trial" type="button" aria-label="Sign up button">
+            Start free trial now!
           </button>
         </p>
       </article>
       <div>
-        <article align="center" aria-label="Article about value">
-          <p>Your Best Value Proposition</p>
+        <article
+          class="article2"
+          align="center"
+          aria-label="Article about value"
+        >
           <p>
+            <b id="value"> Your Best Value Proposition </b> <br /><br /><br />
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
             optio praesentium deserunt quod vel nobis pariatur in dolorem
             aspernatur sint aperiam, neque, tempora dolorum! Voluptate
@@ -78,7 +64,7 @@
           </p>
         </article>
 
-        <table align="center" aria-label="black images">
+        <table class="imgcrsl" align="center" aria-label="black images">
           <tr>
             <td>
               <img src="black.png" alt="Image 1" width="300" />
@@ -95,39 +81,55 @@
             <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
             <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
           </tr>
+          <tr>
+            <td class="learn-more">Learn More</td>
+            <td class="learn-more">Learn More</td>
+            <td class="learn-more">Learn More</td>
+          </tr>
         </table>
       </div>
     </main>
-    <footer style="background-color: #f0f0f0" aria-label="footer">
-      <p>TRADE</p>
-      <p>&copy; 1997</p>
-      <p>privacy&terms</p>
-      <table align="center">
-        <tr>
-          <td>Link 1</td>
-          <td>link 2</td>
-          <td>link 3</td>
-          <td>link 4</td>
-        </tr>
-        <tr>
-          <td>Link 1</td>
-          <td>link 2</td>
-          <td>link 3</td>
-          <td>link 4</td>
-        </tr>
-        <tr>
-          <td>Link 1</td>
-          <td>link 2</td>
-          <td>link 3</td>
-          <td>link 4</td>
-        </tr>
-        <tr>
-          <td>Link 1</td>
-          <td>link 2</td>
-          <td>link 3</td>
-          <td>link 4</td>
-        </tr>
-      </table>
+    <footer aria-label="footer">
+      <div class="footer-left">
+        <p class="footer-logo">TRADE</p>
+        <p class="footer-year">&copy; 1997 - 2025</p>
+        <p class="footer-privacy">privacy & terms</p>
+      </div>
+
+      <div class="footer-nav-container">
+        <table class="footer-nav" aria-label="Footer navigation">
+          <tr>
+            <td><strong>Product</strong></td>
+            <td><strong>Features</strong></td>
+            <td><strong>Resources</strong></td>
+            <td><strong>Company</strong></td>
+          </tr>
+          <tr>
+            <td><a href="#product1">Product 1</a></td>
+            <td><a href="#features1">Feature 1</a></td>
+            <td><a href="#resources1">Resource 1</a></td>
+            <td><a href="#company1">Company 1</a></td>
+          </tr>
+          <tr>
+            <td><a href="#product2">Product 2</a></td>
+            <td><a href="#features2">Feature 2</a></td>
+            <td><a href="#resources2">Resource 2</a></td>
+            <td><a href="#company2">Company 2</a></td>
+          </tr>
+          <tr>
+            <td><a href="#product3">Product 3</a></td>
+            <td><a href="#features3">Feature 3</a></td>
+            <td><a href="#resources3">Resource 3</a></td>
+            <td><a href="#company3">Company 3</a></td>
+          </tr>
+          <tr>
+            <td><a href="#product4">Product 4</a></td>
+            <td><a href="#features4">Feature 4</a></td>
+            <td><a href="#resources4">Resource 4</a></td>
+            <td><a href="#company4">Company 4</a></td>
+          </tr>
+        </table>
+      </div>
     </footer>
   </body>
 </html>
