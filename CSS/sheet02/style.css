@@ -1,0 +1,162 @@
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+.title {
+  font-weight: bold;
+  font-size: x-large;
+  padding-left: 35px;
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  padding: 10px 35px;
+  border-radius: 5px;
+}
+
+#trial {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+.article1 {
+  padding-top: 8em;
+  padding-bottom: 8em;
+  padding-left: 30em;
+  padding-right: 30em;
+}
+
+.article2 {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 20em;
+  padding-right: 20em;
+}
+
+.imgcrsl {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+
+  margin: 0 auto;
+  border-spacing: 40px;
+  table-layout: fixed;
+
+  max-width: 960px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.learn-more {
+  font-size: small;
+  padding: 0;
+}
+
+#ready {
+  font-size: x-large;
+}
+
+#value {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+td {
+  word-wrap: break-word;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 30px;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+align-self: flex-start;
+padding-top: 4em;
+padding-left: 4em;
+}
+
+.footer-logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.footer-year,
+.footer-privacy {
+  font-size: 0.8em;
+  color: #666;
+  margin: 0%;
+}
+
+.footer-nav {
+  border-collapse: collapse;
+  min-width: 400px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.footer-nav td {
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+  
+}
+
+.footer-nav td strong {
+  font-weight: 700;
+  font-size: 1em;
+  padding-bottom: 8px;
+  display: flex;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.9em;
+  display: block;
+  padding: 2px 0;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #007bff;
+}
+
+.footer-nav tr {
+
+display: flex;
+  gap: 100px;
+      justify-content: space-between;
+}
+
+.footer-nav-container {
+  padding-top: 50px; display: ;
+}
