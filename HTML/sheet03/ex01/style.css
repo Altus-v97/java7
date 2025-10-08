@@ -39,17 +39,11 @@ button {
 }
 
 .article1 {
-  padding-top: 8em;
-  padding-bottom: 8em;
-  padding-left: 30em;
-  padding-right: 30em;
+  padding: 150px 370px 150px 370px;
 }
 
 .article2 {
-  padding-top: 3em;
-  padding-bottom: 3em;
-  padding-left: 20em;
-  padding-right: 20em;
+  padding: 20px 200px 20px 200px;
 }
 
 .imgcrsl {
@@ -97,9 +91,9 @@ footer {
 .footer-left {
   display: flex;
   flex-direction: column;
-align-self: flex-start;
-padding-top: 4em;
-padding-left: 4em;
+  align-self: flex-start;
+  padding-top: 4em;
+  padding-left: 4em;
 }
 
 .footer-logo {
@@ -126,7 +120,6 @@ padding-left: 4em;
   padding: 6px 10px;
   text-align: left;
   vertical-align: top;
-  
 }
 
 .footer-nav td strong {
@@ -151,12 +144,12 @@ padding-left: 4em;
 }
 
 .footer-nav tr {
-
-display: flex;
+  display: flex;
   gap: 100px;
-      justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer-nav-container {
-  padding-top: 50px; display: ;
+  padding-top: 50px;
+  display: ;
 }
