@@ -1,18 +1,24 @@
 header {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
+  align-items: flex-end;
 }
 
 .title {
+ margin: 0;
+ padding-bottom: 12px;
   font-weight: bold;
-  font-size: x-large;
+  font-size: 26px;
   padding-left: 35px;
+  
+  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav {
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 25px;
   padding-right: 25px;
+  padding-bottom: 8px;
 }
 
 a {
@@ -23,7 +29,7 @@ a {
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
 
 button {
@@ -31,7 +37,7 @@ button {
   border-radius: 5px;
 }
 
-#trial {
+#trial-button {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: black;
@@ -39,9 +45,14 @@ button {
 }
 
 .article1 {
-  padding: 150px 100px 150px 100px;
+  padding: 150px 150px 150px 150px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  text-wrap: pretty;
 }
 
 .article2 {
@@ -52,22 +63,30 @@ button {
 
 .imgcrsl {
   display: flex;
-  justify-content: space-between;
-  justify-content: center;
-
+  justify-content: space-between center;
   margin: 0 auto;
   border-spacing: 40px;
   table-layout: fixed;
 
   max-width: 960px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
   font-weight: 400;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  display: block;
 }
 
 .learn-more {
   font-size: small;
   padding: 0;
+  a:hover {
+    color: #007bff;
+  }
 }
 
 #ready {
@@ -98,6 +117,7 @@ footer {
   align-self: flex-start;
   padding-top: 64px;
   padding-left: 64px;
+  gap: 8px;
 }
 
 .footer-logo {
@@ -155,5 +175,6 @@ footer {
 
 .footer-nav-container {
   padding-top: 50px;
-  display: ;
+  display: flex;
 }
+
