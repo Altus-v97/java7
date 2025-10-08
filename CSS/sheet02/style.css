@@ -32,18 +32,22 @@ button {
 }
 
 #trial {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: black;
   color: rgb(255, 255, 255);
 }
 
 .article1 {
-  padding: 150px 370px 150px 370px;
+  padding: 150px 100px 150px 100px;
+  align-items: center;
+  justify-content: center;
 }
 
 .article2 {
   padding: 20px 200px 20px 200px;
+  align-items: center;
+  justify-content: center;
 }
 
 .imgcrsl {
@@ -92,8 +96,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  padding-top: 4em;
-  padding-left: 4em;
+  padding-top: 64px;
+  padding-left: 64px;
 }
 
 .footer-logo {
