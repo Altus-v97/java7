@@ -97,7 +97,9 @@ footer {
 .footer-left {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+align-self: flex-start;
+padding-top: 4em;
+padding-left: 4em;
 }
 
 .footer-logo {
@@ -108,7 +110,7 @@ footer {
 
 .footer-year,
 .footer-privacy {
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #666;
   margin: 0%;
 }
@@ -121,16 +123,17 @@ footer {
 }
 
 .footer-nav td {
-  padding: 6px 15px;
+  padding: 6px 10px;
   text-align: left;
   vertical-align: top;
+  
 }
 
 .footer-nav td strong {
   font-weight: 700;
   font-size: 1em;
   padding-bottom: 8px;
-  display: block;
+  display: flex;
 }
 
 .footer-nav a {
@@ -145,4 +148,15 @@ footer {
 
 .footer-nav a:hover {
   color: #007bff;
+}
+
+.footer-nav tr {
+
+display: flex;
+  gap: 100px;
+      justify-content: space-between;
+}
+
+.footer-nav-container {
+  padding-top: 50px; display: ;
 }
