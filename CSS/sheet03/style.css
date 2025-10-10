@@ -7,18 +7,21 @@ header {
 }
 
 .topnav {
-  width: 55%;
-  background-color: white;
+  
+  background-color: rgb(255, 255, 255);
+  color: black;
   border-radius: 2px;
   border: 0;
+  width: 55%;
   text-align: center;
   margin: 0 auto;
   display: flex;
-  padding: 10px 30% 10px 30%;
+  width: 60%;
+  height: 3rem;
 }
 
 input[type="search"]::placeholder {
-  color: #2c2a2a;
+  color: #949494;
 }
 
 body {
@@ -47,6 +50,13 @@ body {
   align-items: flex-start;
   position: relative;
 }
+
+.container:hover {
+  transform: translateY(-10px); /* Slight lift */
+  box-shadow: 7px 16px 35px 15px rgb(166, 105, 1); /* Deeper shadow */
+  background: linear-gradient(to bottom, #e0e0e0 50%, #f9f9f9 50%); /* Subtle background shift */
+}
+
 
 img {
   margin: 20px auto 0px auto;
@@ -89,14 +99,14 @@ img:hover {
 
 .idt {
   display: inline-block;
-
+font-size: 12px;
   background-color: #cdcdc8;
   color: #73493d;
 
   padding: 2px 6px;
   position: static;
   margin-bottom: 0;
-  transform: translateY(-13px);
+  transform: translateY(-11px);
 }
 
 .pkmn-name {
