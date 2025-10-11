@@ -7,7 +7,6 @@ header {
 }
 
 .topnav {
-  
   background-color: rgb(255, 255, 255);
   color: black;
   border-radius: 2px;
@@ -16,7 +15,7 @@ header {
   text-align: center;
   margin: 0 auto;
   display: flex;
-  width: 60%;
+  width: 63%;
   height: 3rem;
 }
 
@@ -54,9 +53,12 @@ body {
 .container:hover {
   transform: translateY(-10px); /* Slight lift */
   box-shadow: 7px 16px 35px 15px rgb(166, 105, 1); /* Deeper shadow */
-  background: linear-gradient(to bottom, #e0e0e0 50%, #f9f9f9 50%); /* Subtle background shift */
+  background: linear-gradient(
+    to bottom,
+    #e0e0e0 50%,
+    #f9f9f9 50%
+  ); /* Subtle background shift */
 }
-
 
 img {
   margin: 20px auto 0px auto;
@@ -99,7 +101,7 @@ img:hover {
 
 .idt {
   display: inline-block;
-font-size: 12px;
+  font-size: 12px;
   background-color: #cdcdc8;
   color: #73493d;
 
@@ -161,4 +163,11 @@ font-size: 12px;
   background-color: #cc0707;
   border-radius: 50%;
   z-index: -1;
+}
+
+
+.grasstype {
+color: green;
+background-color: greenyellow;
+
 }
