@@ -1,12 +1,15 @@
-let dia = "viernes";
+let dia = "Lunes" 
 
 switch (dia) {
-  case "lunes":
-    console.log("Inicio de semana");
+  case "Lunes":
+    console.log("Inicio de la semana")
     break;
-  case "viernes":
-    console.log("Cierre de semana");
+  case "Viernes": 
+    console.log("Find de semana")
     break;
   default:
-    console.log("Día intermedio");
+    console.log("Dia intermedio")
+
+
+
 }
