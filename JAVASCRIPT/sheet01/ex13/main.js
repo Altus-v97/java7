@@ -10,6 +10,7 @@ function local(){
 
 }
 local()
+
 console.log(globalA) // 1000
 console.log(localA) // undefined
 console.log(localB) // undefined
