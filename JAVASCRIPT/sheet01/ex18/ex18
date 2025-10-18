@@ -1,0 +1,3 @@
+console.log(0 == "0"); // Aqui js convierte el string a un numero
+console.log(0 == []); // [] es un array vacio, yque se convierte a 0, por eso sale true.
+console.log("0" == []); // el array vacio se convierte en un string vacio, que no es lo mismo que el string de 0
