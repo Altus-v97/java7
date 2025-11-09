@@ -3,16 +3,13 @@ html {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-header {
-}
-
 .topnav {
   background-color: rgb(255, 255, 255);
   color: black;
   border-radius: 2px;
   border: 0;
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
   width: 59%;
   height: 3rem;
@@ -29,9 +26,9 @@ body {
 
 .rows {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
-  max-width: 800px;
+  max-width: 1000px;
   min-width: 300px;
   margin: 0 auto;
 }
@@ -40,34 +37,25 @@ body {
   background-color: lightgrey;
   box-shadow: 7px 12px 28px 12px rgb(71, 71, 71);
   background: linear-gradient(to bottom, #dcdcdc 50%, #ffffff 50%);
-
   padding-bottom: 1rem;
-  margin: 20px;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  width: 100%;
-  max-width: 300px;
-
-
+  max-width: 285px;
 }
 
 .container:hover {
-  transform: translateY(-10px); /* Slight lift */
-  box-shadow: 7px 16px 35px 15px rgb(166, 105, 1); /* Deeper shadow */
-  background: linear-gradient(
-    to bottom,
-    #e0e0e0 50%,
-    #f9f9f9 50%
-  ); /* Subtle background shift */
+  transform: translateY(-10px);
+  box-shadow: 7px 16px 35px 15px rgb(166, 105, 1);
+  background: linear-gradient(to bottom, #e0e0e0 50%, #f9f9f9 50%);
 }
 
 img {
-  margin: 20px auto 0px auto;
+  margin: 20px auto 10px auto;
   object-fit: contain;
   width: auto;
-  margin-bottom: 10px;
+  height: 130px;
 }
 
 img:hover {
@@ -76,50 +64,33 @@ img:hover {
 
 .name {
   padding-left: 15px;
+  text-transform: capitalize;
+}
+
+.tag-container {
+  padding-left: 15px;
+  margin-top: -10px;
 }
 
 .tag {
   font-size: 9px;
   color: rgb(170, 60, 0);
   background-color: white;
-  padding: 2px;
+  padding: 2px 5px;
   border-width: 1px;
   border-style: solid;
   border-radius: 5px;
-  position: relative;
-  top: -20px;
-  right: -15px;
   margin-right: 5px;
 }
 
-.evolution {
-  font-size: 14px;
-  color: #702700;
-  border-left: 3px solid #702700;
-  text-align: justify;
-  font-weight: 200;
-  padding-left: 5px;
-  margin: -10px 10px auto;
-}
-
 .idt {
-  display: inline-block;
   font-size: 12px;
   background-color: #cdcdc8;
   color: #73493d;
-
   padding: 2px 6px;
-  position: static;
-  margin-bottom: 0;
-  transform: translateY(-11px);
-}
+  margin-left: 15px;
+ transform: translate(-15px, -30px);
 
-.pkmn-name {
-  color: black;
-  font-weight: 200;
-  display: block;
-  line-height: 1.2;
-  margin: 0;
 }
 
 .square1 {
@@ -146,24 +117,49 @@ img:hover {
   z-index: -1;
 }
 
-.circle1 {
-  height: 150px;
-  width: 150px;
-  position: fixed;
-  bottom: -60px;
-  left: -75px;
-  background-color: #cc0707;
-  border-radius: 50%;
-  z-index: -1;
-}
-
+.circle1,
 .circle2 {
   height: 150px;
   width: 150px;
   position: fixed;
   bottom: -60px;
-  right: -75px;
   background-color: #cc0707;
   border-radius: 50%;
   z-index: -1;
+}
+
+.circle1 {
+  left: -75px;
+}
+
+.circle2 {
+  right: -75px;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.pagination button {
+  background-color: #73493d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pagination button:disabled {
+  background-color: #bcaea9;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #a46e51;
 }
