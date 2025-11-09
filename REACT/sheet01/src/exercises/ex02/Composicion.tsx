@@ -6,6 +6,7 @@ function Composicion() {
     <div>
         <Saludo nombre="María" />
         <Saludo nombre="Luis" />
+        <Saludo nombre="Victor Anaya Lopez" />
     </div>
   );
 }

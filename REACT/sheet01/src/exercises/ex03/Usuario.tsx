@@ -20,6 +20,11 @@ const usuarios = [
         nombre: "Andrea",
         edad: '',
     },
+    {
+      id: 4,
+      nombre: "Victor",
+      edad: 20,
+    }
 
 ];
 
