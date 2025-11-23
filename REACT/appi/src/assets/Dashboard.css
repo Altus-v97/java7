@@ -1,0 +1,57 @@
+/* Dashboard.css */
+
+.app-container {
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.main-content {
+    background-color: #ffd8f7;
+     background-image: url(./bg2.png);
+    min-height: 100vh;
+    transition: margin-left 0.3s ease-in-out;
+    
+    /* NEW: Flexbox to center everything */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center;     /* Centers horizontally */
+    
+    /* Ensure it takes full width relative to sidebar */
+    width: 100%; 
+}
+
+/* State: Sidebar Open -> Push content 250px */
+.main-content.content-shifted {
+    margin-left: 250px;
+    width: calc(100% - 250px); /* Adjust width so it doesn't overflow */
+}
+
+/* State: Sidebar Closed -> No margin */
+.main-content.content-full {
+    margin-left: 0;
+    width: 100%;
+}
+/* CARDS */
+.game-card {
+    border: none;
+    border-radius: 50%; /* <-- PERFECT CIRCLE */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    height: 350px;      /* equal width & height */
+    width: 350px;
+    background: white;
+    transition: transform 0.2s;
+    cursor: pointer;
+
+    /* Center content inside circle */
+   display: flex;
+    flex-direction: column;         /* allows icon + text stacking */
+    justify-content: center;        /* vertical center */
+    align-items: center;            /* horizontal center */
+    text-align: center;             /* center any text */
+    margin: 0 auto;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
